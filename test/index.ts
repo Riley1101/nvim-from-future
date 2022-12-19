@@ -11,7 +11,7 @@ interface type {
   a: number;
   b: number;
 }
-    function something() {}
+function something() {}
 function lorem(params: type) {
   console.log("adding two numbers ");
   return params.a + params.b;
