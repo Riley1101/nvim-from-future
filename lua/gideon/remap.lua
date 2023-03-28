@@ -61,6 +61,12 @@ vim.keymap.set("n", "gR", "<cmd>TroubleToggle lsp_references<cr>",
 {silent = true, noremap = true}
 )
 
+-- Tab navigation
+
+vim.keymap.set("n", "<leader>k", "<cmd>tabprevious<cr>")
+vim.keymap.set("n", "<leader>j", "<cmd>tabnext<cr>")
+vim.keymap.set("n", "<leader>pn", "<cmd>tabnew<cr>")
+
 -- Copilot remaps
 vim.g.copilot_no_tab_map = true
 vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })

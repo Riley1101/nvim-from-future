@@ -44,6 +44,8 @@ return require('packer').startup(function(use)
             -- Snippets
             { 'L3MON4D3/LuaSnip' },
             { 'rafamadriz/friendly-snippets' },
+            -- add auto close tags for html
+            { 'windwp/nvim-ts-autotag' },
         }
     }
     use('kyazdani42/nvim-web-devicons')
@@ -80,4 +82,5 @@ return require('packer').startup(function(use)
         'alvan/vim-closetag',
 
     }
+   
 end)
