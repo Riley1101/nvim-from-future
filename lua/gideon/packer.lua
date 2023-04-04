@@ -37,5 +37,13 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+  use {
+      "windwp/nvim-ts-autotag",
+      wants = "nvim-treesitter",
+      event = "InsertEnter",
+      config = function()
+          require("nvim-ts-autotag").setup { enable = true }
+      end,
+  }
 
 end)
