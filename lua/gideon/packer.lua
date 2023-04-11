@@ -45,5 +45,8 @@ return require('packer').startup(function(use)
           require("nvim-ts-autotag").setup { enable = true }
       end,
   }
-
+  use 'MunifTanjim/prettier.nvim'
+  use('neovim/nvim-lspconfig')
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
 end)

@@ -31,3 +31,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- Copilot remap 
 vim.api.nvim_set_keymap('i', '<C-/>', 'copilot#Accept("<CR>")', {expr=true, silent=true})
+
+-- Prettier remap
+vim.keymap.set("n", "<leader>fm", "<cmd>Prettier<cr>")
+
