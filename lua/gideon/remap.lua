@@ -35,3 +35,5 @@ vim.api.nvim_set_keymap('i', '<C-/>', 'copilot#Accept("<CR>")', {expr=true, sile
 -- Prettier remap
 vim.keymap.set("n", "<leader>fm", "<cmd>Prettier<cr>")
 
+-- Remap escape 
+vim.keymap.set("i", "jk", "<ESC>")
