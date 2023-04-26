@@ -50,4 +50,6 @@ return require('packer').startup(function(use)
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
   use 'wakatime/vim-wakatime'
+  use 'simrat39/rust-tools.nvim'
+    
 end)
