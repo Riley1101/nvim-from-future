@@ -48,8 +48,7 @@ return require('packer').startup(function(use)
   use 'MunifTanjim/prettier.nvim'
   use('neovim/nvim-lspconfig')
   use('jose-elias-alvarez/null-ls.nvim')
-  use('MunifTanjim/prettier.nvim')
   use 'wakatime/vim-wakatime'
   use 'simrat39/rust-tools.nvim'
-    
+  use 'sbdchd/neoformat'   
 end)
