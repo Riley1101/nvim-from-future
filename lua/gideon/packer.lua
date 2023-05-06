@@ -51,4 +51,9 @@ return require('packer').startup(function(use)
   use 'wakatime/vim-wakatime'
   use 'simrat39/rust-tools.nvim'
   use 'sbdchd/neoformat'   
+  use "mhinz/vim-startify"
+  use({
+      'weilbith/nvim-code-action-menu',
+      cmd = 'CodeActionMenu',
+  })
 end)

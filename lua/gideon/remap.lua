@@ -33,7 +33,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.api.nvim_set_keymap('i', '<C-/>', 'copilot#Accept("<CR>")', {expr=true, silent=true})
 
 -- Prettier remap
-vim.keymap.set("n", "<leader>fm", "<cmd>Prettier<cr>")
+vim.keymap.set("n", "<leader>fm", "<cmd>LspZeroFormat<cr>")
 vim.keymap.set("n","<leader>fn", "<cmd>Neoformat<cr>")
 
 -- Remap escape 
