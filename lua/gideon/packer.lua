@@ -9,7 +9,6 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use 'Mofiqul/dracula.nvim'
   use 'nvim-treesitter/playground' 
   use 'theprimeagen/harpoon'
   use 'mbbill/undotree'
@@ -52,6 +51,8 @@ return require('packer').startup(function(use)
   use 'simrat39/rust-tools.nvim'
   use 'sbdchd/neoformat'   
   use "mhinz/vim-startify"
+  use 'nordtheme/vim'
+  use "EdenEast/nightfox.nvim"
   use({
       'weilbith/nvim-code-action-menu',
       cmd = 'CodeActionMenu',

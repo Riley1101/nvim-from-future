@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["dracula.nvim"] = {
-    loaded = true,
-    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -138,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -210,6 +210,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  vim = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/vim",
+    url = "https://github.com/nordtheme/vim"
   },
   ["vim-fugitive"] = {
     loaded = true,
