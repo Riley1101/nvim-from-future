@@ -38,3 +38,8 @@ vim.keymap.set("n","<leader>fn", "<cmd>Neoformat<cr>")
 
 -- Remap escape 
 vim.keymap.set("i", "jk", "<ESC>")
+
+-- remap terminal 
+vim.keymap.set("t", "<ESC>", "<C-\\><C-n>")
+vim.keymap.set("t", "<C-h>", "<C-\\><C-n><C-w>h")
+vim.keymap.set("n", "<leader>t", "<cmd>terminal<cr>")
