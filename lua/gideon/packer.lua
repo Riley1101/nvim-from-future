@@ -57,4 +57,30 @@ return require('packer').startup(function(use)
       'weilbith/nvim-code-action-menu',
       cmd = 'CodeActionMenu',
   })
+  -- dap debugger added
+  use 'mfussenegger/nvim-dap'
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  use 'folke/neodev.nvim'
+  use {
+    "williamboman/mason.nvim",
+    "jay-babu/mason-nvim-dap.nvim",
+}
+use { "mxsdev/nvim-dap-vscode-js", requires = {"mfussenegger/nvim-dap"} }
+use {
+  "microsoft/vscode-js-debug",
+  opt = true,
+  run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out" 
+}
+
+-- lsp status 
+ use({
+  "arsham/arshamiser.nvim",
+  requires = {
+    "arsham/arshlib.nvim",
+    "famiu/feline.nvim",
+    "rebelot/heirline.nvim",
+    "kyazdani42/nvim-web-devicons",
+  },
+})
 end)
+

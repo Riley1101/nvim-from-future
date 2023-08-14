@@ -79,6 +79,16 @@ _G.packer_plugins = {
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["arshamiser.nvim"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/arshamiser.nvim",
+    url = "https://github.com/arsham/arshamiser.nvim"
+  },
+  ["arshlib.nvim"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/arshlib.nvim",
+    url = "https://github.com/arsham/arshlib.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -104,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["feline.nvim"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/feline.nvim",
+    url = "https://github.com/famiu/feline.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -113,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["heirline.nvim"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/heirline.nvim",
+    url = "https://github.com/rebelot/heirline.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -124,10 +144,20 @@ _G.packer_plugins = {
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
+  ["mason-nvim-dap.nvim"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/mason-nvim-dap.nvim",
+    url = "https://github.com/jay-babu/mason-nvim-dap.nvim"
+  },
   ["mason.nvim"] = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
   },
   neoformat = {
     loaded = true,
@@ -157,6 +187,21 @@ _G.packer_plugins = {
     path = "/home/arkar/.local/share/nvim/site/pack/packer/opt/nvim-code-action-menu",
     url = "https://github.com/weilbith/nvim-code-action-menu"
   },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-dap-vscode-js"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/nvim-dap-vscode-js",
+    url = "https://github.com/mxsdev/nvim-dap-vscode-js"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -175,6 +220,11 @@ _G.packer_plugins = {
     path = "/home/arkar/.local/share/nvim/site/pack/packer/opt/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag",
     wants = { "nvim-treesitter" }
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -230,6 +280,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/vim-wakatime",
     url = "https://github.com/wakatime/vim-wakatime"
+  },
+  ["vscode-js-debug"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/opt/vscode-js-debug",
+    url = "https://github.com/microsoft/vscode-js-debug"
   }
 }
 
