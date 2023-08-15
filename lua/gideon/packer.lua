@@ -51,8 +51,8 @@ return require('packer').startup(function(use)
   use 'simrat39/rust-tools.nvim'
   use 'sbdchd/neoformat'   
   use "mhinz/vim-startify"
-  use 'nordtheme/vim'
-  use "EdenEast/nightfox.nvim"
+
+  use { "ellisonleao/gruvbox.nvim" }
   use({
       'weilbith/nvim-code-action-menu',
       cmd = 'CodeActionMenu',
@@ -81,6 +81,29 @@ use {
     "rebelot/heirline.nvim",
     "kyazdani42/nvim-web-devicons",
   },
+  config = function()
+    -- ignore any parts you don't want to use
+    vim.cmd.colorscheme("arshamiser_light")
+    require("arshamiser.feliniser")
+    -- or:
+    -- require("arshamiser.heirliniser")
+
+    _G.custom_foldtext = require("arshamiser.folding").foldtext
+    vim.opt.foldtext = "v:lua.custom_foldtext()"
+    -- if you want to draw a tabline:
+    vim.api.nvim_set_option("tabline", [[%{%v:lua.require("arshamiser.tabline").draw()%}]])
+  end,
+})
+
+-- treesitter context
+use({
+    "romgrk/nvim-treesitter-context",
+})
+use({
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
 })
 end)
 
