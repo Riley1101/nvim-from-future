@@ -131,11 +131,6 @@ _G.packer_plugins = {
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
   harpoon = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -175,6 +170,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -272,6 +272,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  vim = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/vim",
+    url = "https://github.com/nordtheme/vim"
   },
   ["vim-fugitive"] = {
     loaded = true,

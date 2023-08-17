@@ -51,8 +51,8 @@ return require('packer').startup(function(use)
   use 'simrat39/rust-tools.nvim'
   use 'sbdchd/neoformat'   
   use "mhinz/vim-startify"
-
-  use { "ellisonleao/gruvbox.nvim" }
+  use 'nordtheme/vim'
+  use "EdenEast/nightfox.nvim"
   use({
       'weilbith/nvim-code-action-menu',
       cmd = 'CodeActionMenu',
@@ -99,7 +99,7 @@ use {
 use({
     "romgrk/nvim-treesitter-context",
 })
-use({
+use ({
     'numToStr/Comment.nvim',
     config = function()
         require('Comment').setup()
