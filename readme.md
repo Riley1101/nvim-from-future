@@ -2,7 +2,6 @@
 
 ![Preview](https://raw.githubusercontent.com/Riley1101/nvim-from-future/v2/preview/preview.jpg)
 
-## Plugins 
 
 ![Plugins](https://raw.githubusercontent.com/Riley1101/nvim-from-future/v2/preview/telescope.png)
 
