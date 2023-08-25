@@ -105,5 +105,8 @@ use ({
         require('Comment').setup()
     end
 })
+
+use "tpope/vim-surround"
+
 end)
 

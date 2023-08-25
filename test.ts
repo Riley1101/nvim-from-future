@@ -1,2 +1,1 @@
-type A = number;
-var a: A = 12;
+let a = "Hello world";
