@@ -107,6 +107,7 @@ use ({
 })
 
 use "tpope/vim-surround"
+use "numToStr/FTerm.nvim"
 
 end)
 

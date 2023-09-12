@@ -42,7 +42,9 @@ vim.keymap.set("i", "jk", "<ESC>")
 -- remap terminal 
 vim.keymap.set("t", "<ESC>", "<C-\\><C-n>")
 vim.keymap.set("t", "<C-h>", "<C-\\><C-n><C-w>h")
-vim.keymap.set("n", "<leader>t", "<cmd>terminal<cr>")
+vim.keymap.set("n", "<leader>T", "<cmd>terminal<cr>")
+vim.keymap.set('n', '<leader>t', '<CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set('t', '<leader>t', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 
 
 -- debugger remap
@@ -81,5 +83,6 @@ vim.keymap.set("n", "<leader>de", function()
   dap.terminate()
   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-w>=", false, true, true), "n", false)
 end)
+
 
 
