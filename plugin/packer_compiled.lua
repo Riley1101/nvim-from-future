@@ -174,6 +174,11 @@ _G.packer_plugins = {
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/neogen",
     url = "https://github.com/danymat/neogen"
   },
+  neovim = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
@@ -276,11 +281,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  vim = {
-    loaded = true,
-    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/vim",
-    url = "https://github.com/nordtheme/vim"
   },
   ["vim-fugitive"] = {
     loaded = true,

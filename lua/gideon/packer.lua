@@ -50,7 +50,7 @@ return require('packer').startup(function(use)
   use 'wakatime/vim-wakatime'
   use 'simrat39/rust-tools.nvim'
   use 'sbdchd/neoformat'   
-  use 'nordtheme/vim'
+    
   use "EdenEast/nightfox.nvim"
   use({
       'weilbith/nvim-code-action-menu',
@@ -114,8 +114,7 @@ use {
   end,
   requires = {'nvim-tree/nvim-web-devicons'}
 }
-
--- draw
-
+-- color 
+use "rose-pine/neovim"
 end)
 
