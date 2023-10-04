@@ -29,8 +29,6 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
 	vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 	vim.keymap.set("n", "<leader>dl", "<cmd>Telescope diagnostics<cr>", opts)
-	vim.keymap.set("n", "<leader>dj", function() vim.diagnostic.goto_next() end, opts)
-	vim.keymap.set("n", "<leader>dk", function() vim.diagnostic.goto_prev() end, opts)
     
 end)
 

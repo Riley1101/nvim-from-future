@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/arkar/.cache/nvim/packer_hererocks/2.1.1692616192/share/lua/5.1/?.lua;/home/arkar/.cache/nvim/packer_hererocks/2.1.1692616192/share/lua/5.1/?/init.lua;/home/arkar/.cache/nvim/packer_hererocks/2.1.1692616192/lib/luarocks/rocks-5.1/?.lua;/home/arkar/.cache/nvim/packer_hererocks/2.1.1692616192/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/arkar/.cache/nvim/packer_hererocks/2.1.1692616192/lib/lua/5.1/?.so"
+local package_path_str = "/home/arkar/.cache/nvim/packer_hererocks/2.1.1694285958/share/lua/5.1/?.lua;/home/arkar/.cache/nvim/packer_hererocks/2.1.1694285958/share/lua/5.1/?/init.lua;/home/arkar/.cache/nvim/packer_hererocks/2.1.1694285958/lib/luarocks/rocks-5.1/?.lua;/home/arkar/.cache/nvim/packer_hererocks/2.1.1694285958/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/arkar/.cache/nvim/packer_hererocks/2.1.1694285958/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -90,6 +90,11 @@ _G.packer_plugins = {
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -114,14 +119,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
-  },
-  ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14dashboard\frequire\0" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/home/arkar/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
-    url = "https://github.com/glepnir/dashboard-nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -173,11 +170,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/neogen",
     url = "https://github.com/danymat/neogen"
-  },
-  neovim = {
-    loaded = true,
-    path = "/home/arkar/.local/share/nvim/site/pack/packer/start/neovim",
-    url = "https://github.com/rose-pine/neovim"
   },
   ["nightfox.nvim"] = {
     loaded = true,
@@ -296,12 +288,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arkar/.local/share/nvim/site/pack/packer/start/vim-wakatime",
     url = "https://github.com/wakatime/vim-wakatime"
-  },
-  ["vscode-js-debug"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/arkar/.local/share/nvim/site/pack/packer/opt/vscode-js-debug",
-    url = "https://github.com/microsoft/vscode-js-debug"
   }
 }
 
@@ -330,7 +316,6 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'dashboard-nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
 vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'nvim-ts-autotag'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")

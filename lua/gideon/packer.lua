@@ -1,5 +1,3 @@
-vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -65,11 +63,6 @@ return require('packer').startup(function(use)
     "jay-babu/mason-nvim-dap.nvim",
 }
 use { "mxsdev/nvim-dap-vscode-js", requires = {"mfussenegger/nvim-dap"} }
-use {
-  "microsoft/vscode-js-debug",
-  opt = true,
-  run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out" 
-}
 
 -- treesitter context
 use({
@@ -90,7 +83,9 @@ use "numToStr/FTerm.nvim"
 use {
     "danymat/neogen",
     config = function()
-        require('neogen').setup {}
+        require('neogen').setup {
+
+        }
     end,
     requires = "nvim-treesitter/nvim-treesitter",
     -- Uncomment next line if you want to follow only stable versions
@@ -103,18 +98,7 @@ use {
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
 
--- dashboard-nvim
-use {
-  'glepnir/dashboard-nvim',
-  event = 'VimEnter',
-  config = function()
-    require('dashboard').setup {
-      -- config
-    }
-  end,
-  requires = {'nvim-tree/nvim-web-devicons'}
-}
 -- color 
-use "rose-pine/neovim"
+use { "catppuccin/nvim", as = "catppuccin" }
 end)
 
