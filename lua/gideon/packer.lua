@@ -100,5 +100,6 @@ use {
 
 -- color 
 use { "catppuccin/nvim", as = "catppuccin" }
+use "folke/zen-mode.nvim" 
 end)
 
