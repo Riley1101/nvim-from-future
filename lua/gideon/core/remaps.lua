@@ -28,3 +28,13 @@ vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+-- Remap escape 
+vim.keymap.set("i", "jk", "<ESC>")
+
+-- remap terminal 
+vim.keymap.set("t", "<ESC>", "<C-\\><C-n>")
+vim.keymap.set("t", "<C-h>", "<C-\\><C-n><C-w>h")
+vim.keymap.set("n", "<leader>T", "<cmd>terminal<cr>")
+vim.keymap.set('n', '<leader>t', '<CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set("t", "<ESC>", '<CMD>lua require("FTerm").toggle()<CR>')
+
