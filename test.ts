@@ -5,6 +5,9 @@ function a(){
 
 console.log("Hello")
 
+function b(){
+}
+
 function itm(){
 
 }

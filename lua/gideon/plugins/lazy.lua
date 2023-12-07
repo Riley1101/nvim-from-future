@@ -36,6 +36,7 @@ require("lazy").setup({
     {'saadparwaiz1/cmp_luasnip'},
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/cmp-nvim-lua'},
+    'saadparwaiz1/cmp_luasnip',
     -- cats
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
     "tpope/vim-fugitive",
