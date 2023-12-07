@@ -1,2 +1,2 @@
-require("gideon.remap");
-require("gideon.set");
+require("gideon.core")
+require("gideon.plugins")

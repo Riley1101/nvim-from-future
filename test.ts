@@ -1,9 +1,9 @@
-let a = "Hello world";
+function a(){
+    var a= 12;
+    console.log(a)
+}
 
-function apple(a) {
-  var _: number = 12;
 
-  if (a >= 12) {
-    console.log("Hello world");
-  }
+function itm(){
+
 }
