@@ -38,6 +38,15 @@ require("lazy").setup({
     {'hrsh7th/cmp-nvim-lua'},
     -- cats
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-    "tpope/vim-fugitive"
+    "tpope/vim-fugitive",
+
+    -- lua snips
+    {
+        "L3MON4D3/LuaSnip",
+        -- follow latest release.
+        version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+        -- install jsregexp (optional!).
+        build = "make install_jsregexp"
+    }
 
 })
