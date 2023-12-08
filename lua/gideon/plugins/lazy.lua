@@ -1,4 +1,5 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -18,41 +19,55 @@ require("lazy").setup({
     { "folke/neoconf.nvim", cmd = "Neoconf" },
     "folke/neodev.nvim",
 
-    {"williamboman/mason.nvim" },
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
+    -- language server
+   {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v1.x',
+        dependencies = {
+            -- LSP Support
+            {'neovim/nvim-lspconfig'},             -- Required
+            {'williamboman/mason.nvim'},           -- Optional
+            {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-    "neovim/nvim-lspconfig",
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},         -- Required
+            {'hrsh7th/cmp-nvim-lsp'},     -- Required
+            {'hrsh7th/cmp-buffer'},       -- Optional
+            {'hrsh7th/cmp-path'},         -- Optional
+            {'saadparwaiz1/cmp_luasnip'}, -- Optional
+            {'hrsh7th/cmp-nvim-lua'},     -- Optional
+
+            -- Snippets
+            {'L3MON4D3/LuaSnip'},             -- Required
+            {'rafamadriz/friendly-snippets'}, -- Optional
+        }
+    },
+
+    -- telescrope
     {
         'nvim-telescope/telescope.nvim', tag = '0.1.5',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
+
+    -- undotree and treesitter
     'nvim-treesitter/nvim-treesitter',
     'mbbill/undotree',
-    -- auto complete
-    {'hrsh7th/nvim-cmp'},
-    {'hrsh7th/cmp-buffer'},
-    {'hrsh7th/cmp-path'},
-    {'saadparwaiz1/cmp_luasnip'},
-    {'hrsh7th/cmp-nvim-lsp'},
-    {'hrsh7th/cmp-nvim-lua'},
-    'saadparwaiz1/cmp_luasnip',
+
     -- cats
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+
+    -- git wrapper
     "tpope/vim-fugitive",
 
     -- lua snips
     {
         "L3MON4D3/LuaSnip",
-        -- follow latest release.
-        version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-        -- install jsregexp (optional!).
+        version = "v2.*",
         build = "make install_jsregexp"
     },
+
+    -- floating terminal and dev icons
     "numToStr/FTerm.nvim",
     "nvim-tree/nvim-web-devicons",
-    "nvim-lualine/lualine.nvim"
-
-
-
+    "nvim-lualine/lualine.nvim",
 })

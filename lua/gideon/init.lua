@@ -1,2 +1,3 @@
-require("gideon.core")
+
 require("gideon.plugins")
+require("gideon.core")

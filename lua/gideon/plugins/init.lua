@@ -8,4 +8,5 @@ require("gideon.plugins.cmp")
 require("gideon.plugins.catpuccin")
 require("gideon.plugins.devicons")
 require("gideon.plugins.lualine")
+require("gideon.plugins.luasnip")
 
