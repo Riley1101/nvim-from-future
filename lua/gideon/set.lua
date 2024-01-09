@@ -32,7 +32,3 @@ vim.filetype.add({
     }
 })
 
---change shell to zsh
-vim.opt.shell = "/bin/zsh"
-
-
