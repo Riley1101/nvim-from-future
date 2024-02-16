@@ -39,6 +39,7 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' },
         }
     }
+
     use {
         "windwp/nvim-ts-autotag",
         wants = "nvim-treesitter",
@@ -47,6 +48,7 @@ return require('packer').startup(function(use)
             require("nvim-ts-autotag").setup { enable = true }
         end,
     }
+
     use 'MunifTanjim/prettier.nvim'
 
     use('jose-elias-alvarez/null-ls.nvim')
@@ -76,6 +78,7 @@ return require('packer').startup(function(use)
     use({
         "romgrk/nvim-treesitter-context",
     })
+
     use({
         'numToStr/Comment.nvim',
         config = function()
@@ -107,6 +110,7 @@ return require('packer').startup(function(use)
     }
 
     -- color
+    use "ellisonleao/gruvbox.nvim"
     use { "catppuccin/nvim", as = "catppuccin" }
     use "folke/zen-mode.nvim"
 
@@ -118,5 +122,6 @@ return require('packer').startup(function(use)
             "nvim-lua/plenary.nvim",
         },
     }
+
 
 end)

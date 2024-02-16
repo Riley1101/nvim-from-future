@@ -44,7 +44,7 @@ vim.keymap.set("t", "<ESC>", "<C-\\><C-n>")
 vim.keymap.set("t", "<C-h>", "<C-\\><C-n><C-w>h")
 vim.keymap.set("n", "<leader>T", "<cmd>terminal<cr>")
 vim.keymap.set('n', '<leader>t', '<CMD>lua require("FTerm").toggle()<CR>')
-vim.keymap.set("t", "<ESC>", '<CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set("t", "<C-c>", '<CMD>lua require("FTerm").toggle()<CR>')
 
 
 -- debugger remap
@@ -84,10 +84,8 @@ vim.keymap.set("n", "<leader>de", function()
   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-w>=", false, true, true), "n", false)
 end)
 
--- documentation generator
-
+-- documentation generator neogen
 local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("n", "<Leader>nf", ":lua require('neogen').generate()<CR>", opts)
 vim.api.nvim_set_keymap("n", "<Leader>nc", ":lua require('neogen').generate({ type = 'class' })<CR>", opts)
-
 
